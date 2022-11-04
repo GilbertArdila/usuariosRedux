@@ -1,3 +1,8 @@
+:root{
+  --verde-platzi:#98ca3f;
+  --azul-platzi:#121f3d;
+  --secondary-blue:#6CC3EF;
+}
 *{
   box-sizing: border-box;
   padding: 0;
@@ -18,34 +23,11 @@ body{
 .Title{
   text-align: center;
   margin: 20px auto;
+  color: var(--azul-platzi);
 }
-.Table{
-  width: 100vw;
-  margin: 10px auto;
-}
-.Table-container{
-  width: 100vw;
-  height: auto;
-  margin-left: 2px;
-  padding: 5px;
-  text-align: left;
-}
-.Table-container td{
-  padding-top: 10px;
-	padding-bottom: 10px;
-}
-.Nav{
-  width: 100vw;
-  height: 100px;
-  padding: 20px;
-  font-size: 2rem;
-  background-color: #253A46;
-}
-.Nav a{
-  color: white;
-  padding-right: 50px;
-  text-decoration: none;
-}
+
+
+
 .Publicaciones{
   text-align: center;
   margin: 30px auto;
