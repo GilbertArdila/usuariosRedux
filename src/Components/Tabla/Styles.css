@@ -1,0 +1,35 @@
+.Table{
+    width: 100vw;
+    margin: 10px auto;
+  }
+  
+  .Table-container{
+    width: 100vw;
+    height: auto;
+    margin-left: 2px;
+    padding:5px 25px;
+    text-align: left;
+  }
+  .Table-container thead{
+    width: 100vw;
+    height: 60px;
+    text-align: center;
+    background-color:   var(--verde-platzi) ;
+  }
+  .Table-container td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  tbody tr:nth-child(2n){
+    background-color:   var(--azul-platzi) ;
+    color: white;
+  }
+  tbody tr:nth-child(2n+1){
+    background-color:   var(--secondary-blue) ;
+    color: white;
+  }
+  .link:hover{
+   transform: scale(1.2);
+   cursor: grab;
+  }
