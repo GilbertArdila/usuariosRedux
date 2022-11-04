@@ -1,0 +1,6 @@
+export const ACTUALIZAR_PUBLICACIONES='traer_publicaciones'
+export const CARGANDO='publicaciones_cargando'
+export const ERROR='publicaciones_error'
+export const COM_CARGANDO='cargando_comentarios'
+export const COM_ERROR='comentarios_error'
+export const ACTUALIZAR_COMENTARIOS='actualizar_comentarios'
