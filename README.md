@@ -1,4 +1,5 @@
 # react-redux
+## tabla de usuarios con tareas, comentarios y CRUD manejamos estados globales con redux
 - react router dom6
 - redux 
 - thunk
