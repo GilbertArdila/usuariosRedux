@@ -31,13 +31,14 @@ const Tabla = (props) => {
 			</thead>
 			<tbody>
 				{props.usuarios.map((usuario, key) => (
+					
 					<tr key={usuario.id}>
-						<td>{usuario.name}</td>
-						<td>{usuario.email}</td>
-						<td>{usuario.website}</td>
-						<td>{usuario.phone}</td>
-						<td>{usuario.company.name}</td>
-						<td ><Link className='link' to={`/publicaciones/${key}`}><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-eye-64.png" alt="ver" /></Link></td>
+						<td data-titulo='Nombre'>{usuario.name}</td>
+						<td data-titulo='Email'>{usuario.email}</td>
+						<td data-titulo='Sitio web'>{usuario.website}</td>
+						<td data-titulo='Teléfono'>{usuario.phone}</td>
+						<td data-titulo='Compañia'>{usuario.company.name}</td>
+						<td data-titulo='Link' ><Link className='link' to={`/publicaciones/${key}`}><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-eye-64.png" alt="ver" /></Link></td>
 					</tr>
 				))}
 			</tbody>

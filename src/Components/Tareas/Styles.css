@@ -1,0 +1,44 @@
+.Tareas{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid var(--verde-platzi);
+    border-radius: 4px;
+  }
+  .Tareas-usuario{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: monospace;
+  }
+  .checkbox-container{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border:1px solid var(--azul-platzi);
+    padding:20px 10px;
+  }
+  .tarea-checkbox,
+  .checkbox-title,
+  .btn{
+    margin: 0 5px 0 0;
+  }
+  .editar,
+  .borrar{
+      width: 40px;
+      background-color: var(--secondary-blue);
+  }
+  .borrar{
+    background-color: red;
+  }
+  .agregar{
+    margin: 10px 0;
+    border:2px solid  var(--verde-platzi);
+  }
+  .agregar a{
+    text-decoration: none;
+  }
+  

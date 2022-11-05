@@ -1,0 +1,30 @@
+.Publicaciones{
+    text-align: center;
+    margin: 30px auto;
+   
+  }
+  .Publicaciones-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    margin: 10px auto;
+    padding: 20px;
+    border: 2px solid var(--verde-platzi);
+    cursor: pointer;
+  }
+  .Publicaciones-container_title{
+    margin: 0 auto 20px;
+  }
+  .Publicaciones-container_body{
+    text-align: left;
+  }
+  .Comentarios{
+   display: flex;
+   flex-direction: column;
+   border: 1px dotted var(--azul-platzi);
+   margin: 20px 0;
+  }
+  .Comentarios span{
+    margin: 5px 0;
+  }

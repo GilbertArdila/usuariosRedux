@@ -16,10 +16,14 @@ body{
 }
 .btn{
   margin: 10px auto;
+  border:2px solid var(--azul-platzi);
   border-radius: 4px;
   padding: 4px;
   cursor: pointer;
+  
 }
+.btn:hover{
+  transform: scale(1.2);}
 .Title{
   text-align: center;
   margin: 20px auto;
@@ -28,82 +32,6 @@ body{
 
 
 
-.Publicaciones{
-  text-align: center;
-  margin: 30px auto;
- 
-}
-.Publicaciones-container{
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: auto;
-  padding: 20px;
-  border-bottom: 1px solid black;
-  cursor: pointer;
-}
-.Publicaciones-container_title{
-  margin: 0 auto 20px;
-}
-.Publicaciones-container_body{
-  text-align: left;
-}
-.Comentarios{
- display: flex;
- flex-direction: column;
- border-bottom: 1px solid red;
- margin: 20px 0;
-}
-.Comentarios span{
-  margin: 5px 0;
-}
-.Tareas{
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: auto;
-  margin: 10px auto;
-  padding: 20px;
-  border-bottom: 1px dotted red;
-}
-.Tareas-usuario{
-  font-weight: bold;
-}
-.Tareas-TareaContainer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-  height: auto;
-}
-.Tareas-TareaContainer input{
-  margin: 0 auto;
-}
-.checkbox-container{
-  display: flex;
-  flex-direction: column-reverse;
-  width: 300px;
-  align-items: center;
-}
-.Tareas-agregar{
-  width: 150px;
-  padding: 5px;
-  border-radius: 4px;
-  margin-left: 10px;
-  margin-top: 20px;
-}
-.Guardar{
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  min-height: 100vh;
-  align-items: center;
-}
-.Guardar h1{
-  margin-bottom: 20px;
-}
-.Guardar input{
-  margin: 20px auto;
-}
+
 
 

@@ -6,6 +6,7 @@ import { Error } from '../Error/Error'
 import Comentarios  from '../Comentarios/Comentarios'
 import * as usuariosActions from '../../actions/usuariosActions'
 import * as publicacionesActions from '../../actions/publicacionesActions'
+import './Styles.css'
 
 
 const{abrirCerrar,traerComentarios}=publicacionesActions
@@ -30,7 +31,9 @@ const handleOnClick=(id,key,comnetarios)=>{
   props.abrirCerrar(id,key)
   if(!comnetarios.length){
     props.traerComentarios(key)
+    
   }
+  
   
 }
 
@@ -47,9 +50,10 @@ const handleOnClick=(id,key,comnetarios)=>{
           {publicaciones.map((publicacion) => (
             publicacion.map((pub,key) => (
               
-              <div className='Publicaciones-container' key={pub.id} onClick={()=>handleOnClick(pub.id,key,pub.comnetarios)}>
+              <div className='Publicaciones-container' key={pub.id} >
                 <h3 className=''>{pub.title}</h3>
                 <span className='Publicaciones-container_body'>{pub.body}</span>
+                <button className='btn' onClick={()=>handleOnClick(pub.id,key,pub.comnetarios)}>{'Click'}</button>
                 {pub.abierto?<Comentarios comentarios={pub.comnetarios}/>:''}
               </div>
               

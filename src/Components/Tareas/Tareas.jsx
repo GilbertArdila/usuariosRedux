@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import { Loader } from '../Loader/Loader';
 import { Error } from '../Error/Error';
 import * as tareasActions from '../../actions/tareasActions';
+import './Styles.css'
 
 const Tareas = (props) => {
   const { tareas, cargando, error,cambioCheck,eliminarTarea } = props;
-
   useEffect(() => {
     if(!Object.keys(props.tareas).length){
        props.traerTodas()
@@ -22,12 +22,13 @@ const Tareas = (props) => {
     <>
       {cargando && <Loader />}
       {error!=='' && <Error message={error}/>}
-      <button className='Tareas-agregar'><Link to={'/tareas/agregar'}>Agregar</Link></button>
+      <button className='btn agregar'><Link to={'/tareas/agregar'}>Agregar tarea</Link></button>
 
       {
         Object.keys(tareas).map((usuario_id) => (
-          <div className='Tareas' key={usuario_id}>
-            <p className='Tareas-usuario'>Usuario:{' '}{usuario_id}</p>
+         
+          <div className='Tareas' key={usuario_id}>   
+            <p className='Tareas-usuario'>Tareas usuario:{' '}{usuario_id}</p>
             <div className='Tareas-TareaContainer'>
               {ponerTareas(usuario_id, tareas,cambioCheck,eliminarTarea)}
             </div>
@@ -44,9 +45,7 @@ const ponerTareas = (usuario_id, tareas,cambioCheck,eliminarTarea) => {
   return Object.keys(por_usuario).map((tarea_id) => (
     <div className='checkbox-container' key={tarea_id}>
 
-      <button className='btn'><Link to={`/tareas/agregar/${usuario_id}/${tarea_id}`}>Editar</Link></button>
-
-      <button className='btn' onClick={()=>eliminarTarea(tarea_id)}>Eliminar</button>
+     
 
       <input 
       type="checkbox" 
@@ -55,6 +54,10 @@ const ponerTareas = (usuario_id, tareas,cambioCheck,eliminarTarea) => {
       onChange={()=>cambioCheck(usuario_id,tarea_id)}
       />
       <span className='checkbox-title'>{por_usuario[tarea_id].title}</span>
+
+      <button className='btn editar'><Link to={`/tareas/agregar/${usuario_id}/${tarea_id}`}> 🖊</Link></button>
+
+<button className='btn borrar' onClick={()=>eliminarTarea(tarea_id)}>🗑</button>
       
       
     </div>

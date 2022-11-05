@@ -1,0 +1,24 @@
+.Guardar{
+    display: flex;
+   flex-direction: column;
+  align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    margin-top: 100px;
+  }
+  .Guardar h1{
+    margin-bottom: 20px;
+  }
+  .Guardar input{
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  .guardar{
+    width: 100px;
+    margin: 0 auto;
+    background-color: var(--verde-platzi);
+    
+  }
+  
+  

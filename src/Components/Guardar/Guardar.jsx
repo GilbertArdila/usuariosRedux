@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import { Loader } from '../Loader/Loader';
 import { Error } from '../Error/Error';
 import * as tareasActions from '../../actions/tareasActions'
-
+import './Styles.css'
 const Guardar = (props) => {
 
   const{usuario_id,tarea_id}=useParams()
@@ -69,7 +69,7 @@ const handleClick=()=>{
         <input type="number" id="usuario" value={props.usuario_id} onChange={cambioUsuarioId}/>
         <label htmlFor="titulo">Título</label>
         <input type="text"  id="titulo" value={props.titulo} onChange={cambioTitulo} />
-        <button onClick={handleClick} disabled={deshabilitar()}>Guardar</button>
+        <button className='btn guardar' onClick={handleClick} disabled={deshabilitar()}>Guardar</button>
     </div>
     </>
   )
